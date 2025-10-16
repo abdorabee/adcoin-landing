@@ -78,9 +78,9 @@ export default function WaitlistForm() {
         <motion.button
           type="submit"
           disabled={isLoading}
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1.06, boxShadow: "0 0 24px rgba(139,92,246,0.6)" }}
           whileTap={{ scale: 0.95 }}
-          className="px-8 py-3 gradient-bg text-white font-semibold rounded-xl hover:shadow-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="px-8 py-3 gradient-bg text-white font-semibold rounded-xl hover:shadow-xl transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed button-neon"
         >
           {isLoading ? 'Joining...' : 'Join Waitlist'}
         </motion.button>

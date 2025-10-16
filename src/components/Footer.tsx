@@ -34,7 +34,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-t from-gray-900 to-transparent py-16 px-4">
+    <footer className="bg-gradient-to-t from-gray-900 to-transparent py-16 px-4 aurora">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -44,10 +44,10 @@ export default function Footer() {
         >
           {/* Logo and tagline */}
           <div className="mb-8">
-            <h3 className="text-3xl font-bold gradient-text mb-4">
+            <h3 className="text-3xl font-bold gradient-text mb-4 glow-text">
               AdCoin
             </h3>
-            <p className="text-gray-400 text-lg mb-8">
+            <p className="text-gray-300 text-lg mb-8">
               Built on Polygon • Powered by Web3 • © 2025 AdCoin
             </p>
           </div>
@@ -70,7 +70,7 @@ export default function Footer() {
                   transition: { duration: 0.2 }
                 }}
                 whileTap={{ scale: 0.9 }}
-                className="p-3 glass rounded-xl text-gray-400 hover:text-white transition-colors duration-200 hover:shadow-lg"
+                className="p-3 holo-card neon-border rounded-xl text-gray-300 hover:text-white transition-colors duration-200 hover:shadow-[0_0_24px_rgba(139,92,246,0.35)]"
                 aria-label={link.name}
               >
                 {link.icon}
@@ -79,8 +79,8 @@ export default function Footer() {
           </div>
 
           {/* Additional info */}
-          <div className="border-t border-gray-800 pt-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-gray-500">
+          <div className="border-t border-white/10 pt-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-gray-300">
               <div>
                 <h4 className="text-white font-semibold mb-2">Platform</h4>
                 <p>Web3 advertising platform that rewards users for their attention</p>
@@ -97,8 +97,8 @@ export default function Footer() {
           </div>
 
           {/* Bottom text */}
-          <div className="mt-8 pt-8 border-t border-gray-800">
-            <p className="text-gray-500 text-sm">
+          <div className="mt-8 pt-8 border-t border-white/10">
+            <p className="text-gray-400 text-sm">
               AdCoin is not a registered investment advisor. Cryptocurrency investments are subject to market risks.
             </p>
           </div>

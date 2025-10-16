@@ -35,7 +35,7 @@ const tokenomicsData = [
 
 export default function TokenomicsSection() {
   return (
-    <section className="py-20 px-4">
+    <section className="py-20 px-4 aurora">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -43,7 +43,7 @@ export default function TokenomicsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 glow-text">
             <span className="gradient-text">Tokenomics</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
@@ -60,11 +60,11 @@ export default function TokenomicsSection() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ 
-                scale: 1.05,
-                rotateY: 5,
-                transition: { duration: 0.2 }
+                scale: 1.06,
+                rotateY: 6,
+                transition: { duration: 0.25 }
               }}
-              className="glass rounded-2xl p-6 hover:shadow-2xl transition-all duration-300"
+              className="holo-card neon-border rounded-2xl p-6 hover:shadow-[0_0_36px_rgba(139,92,246,0.35)] transition-all duration-300"
             >
               <div className="text-center">
                 <div className="text-4xl mb-4">{item.icon}</div>
@@ -74,7 +74,7 @@ export default function TokenomicsSection() {
                 <h3 className="text-xl font-semibold mb-3 text-white">
                   {item.title}
                 </h3>
-                <p className="text-gray-400 text-sm leading-relaxed">
+                <p className="text-gray-300 text-sm leading-relaxed">
                   {item.description}
                 </p>
               </div>
@@ -89,7 +89,7 @@ export default function TokenomicsSection() {
           transition={{ delay: 0.5 }}
           className="mt-16 text-center"
         >
-          <div className="glass rounded-2xl p-8 max-w-4xl mx-auto">
+          <div className="holo-card neon-border rounded-2xl p-8 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold mb-4 text-white">
               Built on Polygon Network
             </h3>
@@ -97,7 +97,7 @@ export default function TokenomicsSection() {
               AdCoin leverages Polygon's fast, low-cost transactions to ensure seamless user experiences 
               and sustainable token economics. No more gas fee headaches!
             </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-400">
+            <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-300">
               <span className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-green-400 rounded-full"></span>
                 Low Transaction Fees

@@ -35,7 +35,7 @@ const roadmapData = [
 
 export default function RoadmapSection() {
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-transparent to-purple-900/10">
+    <section className="py-20 px-4 bg-gradient-to-b from-transparent to-purple-900/10 aurora">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -43,7 +43,7 @@ export default function RoadmapSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 glow-text">
             <span className="gradient-text">Roadmap</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
@@ -53,7 +53,7 @@ export default function RoadmapSection() {
 
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-500 via-cyan-500 to-amber-500 hidden md:block"></div>
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-400 via-cyan-400 to-amber-400 shadow-[0_0_20px_rgba(139,92,246,0.5)] hidden md:block"></div>
 
           <div className="space-y-12">
             {roadmapData.map((item, index) => (
@@ -66,12 +66,12 @@ export default function RoadmapSection() {
                 className="relative flex items-start gap-8"
               >
                 {/* Timeline dot */}
-                <div className="hidden md:flex absolute left-6 w-4 h-4 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full border-4 border-gray-900 z-10"></div>
+                <div className="hidden md:flex absolute left-6 w-4 h-4 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full border-4 border-gray-900 z-10 shadow-[0_0_12px_rgba(139,92,246,0.8)]"></div>
 
                 <div className="flex-1 ml-0 md:ml-16">
                   <motion.div
                     whileHover={{ scale: 1.02 }}
-                    className="glass rounded-2xl p-8 hover:shadow-2xl transition-all duration-300"
+                    className="holo-card neon-border rounded-2xl p-8 hover:shadow-[0_0_36px_rgba(6,182,212,0.35)] transition-all duration-300"
                   >
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                       <div className="flex items-center gap-4 mb-4 md:mb-0">
@@ -121,7 +121,7 @@ export default function RoadmapSection() {
           transition={{ delay: 0.8 }}
           className="mt-16 text-center"
         >
-          <div className="glass rounded-2xl p-8 max-w-4xl mx-auto">
+          <div className="holo-card neon-border rounded-2xl p-8 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold mb-4 text-white">
               Join Our Journey
             </h3>
